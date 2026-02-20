@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Admin Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Users</a>
+        <a href="#">Orders</a>
+        <a href="#">Analytics</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <div class="navbar">
+            <h3>Dashboard Overview</h3>
+            <input type="text" placeholder="Search...">
+        </div>
+
+        <div class="content">
+
+            <!-- Stats Cards -->
+            <div class="cards">
+                <div class="card">
+                    <h2 id="users">0</h2>
+                    <p>Total Users</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="orders">0</h2>
+                    <p>Total Orders</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="revenue">$0</h2>
+                    <p>Total Revenue</p>
+                </div>
+
+                <div class="card">
+                    <h2 id="visits">0</h2>
+                    <p>Website Visits</p>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-container">
+                <h3>Monthly Sales</h3>
+                <div id="chart"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
